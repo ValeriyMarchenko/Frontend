@@ -37,6 +37,10 @@ padding-bottom: 10px;
 text-decoration: none;
 }
 
+.smallfut {
+position: fixed;
+}
+
 .top {
 padding: 3px;
 background:  rgb(30, 28, 28);
