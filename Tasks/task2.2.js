@@ -3,18 +3,24 @@ function whatType() {
     let x = xx.toLocaleLowerCase();
     let check = parseInt(x);
 
-    if (x == 'true' || x == 'false') {
-        alert(`Value '${xx}' is boolean`);
-    } else if (check || x == '0' || x == '-0') {
-        if (x.match(/[a-z]/)){
-            alert(`Value '${xx}' is string`);
-        } else {
+    if (xx) {
+        if (x == 'true' || x == 'false') {
+            alert(`Value '${xx}' is boolean`);
+        } else if (check || x == '0' || x == '-0') {
+            if (x.match(/[a-z]/)){
+                alert(`Value '${xx}' is string`);
+            } else {
+                alert(`Value '${xx}' is number`);
+            }
+        } else if (x == 'null') {
+            alert(`Type of value '${xx}' is object`);   
+        } else if (x == 'undefined') {
+            alert(`Type of value '${xx}' is undefined`);   
+        } else if (x == 'NaN') {
             alert(`Value '${xx}' is number`);
+        } else {
+            alert(`Value '${xx}' is string`);
         }
-    } else if (x == 'null' || x == 'NaN' || x == 'undefined') {
-        alert(`Type of value '${xx}' is unknown`);
-    } else {
-        alert(`Value '${xx}' is string`);
     }
 }
 

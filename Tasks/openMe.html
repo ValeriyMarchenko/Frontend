@@ -2,43 +2,180 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Сollection of tasks</title>
+        <title>Сollection</title>
+        <link rel="icon" href="images/gitlab.png" type="image/png">
+        <link href="css/styles.css" rel="stylesheet">
     </head>
     <body>
-        <p>
-            <script src='task1.1.js'></script>
-            <input type="button" value="Change rubs" onclick="change()">
-        </p>
-        <p>
-            <script src="task2.1.js"></script>
-            <input type="button" value="Even/odd" onclick="numbers()">
-        </p>
-        <p>
-            <script src="task2.2.js"></script>
-            <p><h4>Warning! Func 'What type' is only experimental! Simple one for task is located in
-                file 'task2.2.js' at the bottom.
-            </h4></p>
-            <input type="button" value="What type" onclick="whatType()">
-        </p>
-        <p>
-            <script src="task3.1.js"></script>
-            <input type="button" value="Reverse" onclick="reverseSrt()">
-        </p>
-        <p>
-            <script src="task3.2.js"></script>
-            <input type="button" value="Random" onclick="randInt()">
-        </p>
-        <p>
-            <script src="task4.1.js"></script>
-            <input type="button" value="Array" onclick="arrayList()">
-        </p>
-        <p>
-            <script src="task5.1.js"></script>
-            <input type="button" value="Unique" onclick="arrayUnique()">
-        </p>
-        <p>
-            <script src="task5.2.js"></script>
-            <input type="button" value="Array odd/even items" onclick="arrayOddEven()">
-        </p>
+        <nav class="top">
+            <a href="openMe.html" class="double-border-button">E2</a>
+            <div class="top-right"><a href="contacts.html" class="double-border-button">Contacts</a></div>
+        </nav>
+        <h1>My tasks collection fot E module</h1>
+        <ul>
+            <li>
+                <p>Converter</p>
+                <p><details class="task">
+                    <summary>Task</summary>
+                    <h4 class="text">Используя консоль браузера, создайте программу перевода долларов в рубли.
+                        При помощи prompt() ваш потенциальный клиент должен ввести необходимую для перевода сумму. 
+                        При помощи alert() покажите ему результат.</h4>
+                </details></p>
+                <script src='task1.1.js'></script>
+                <input class="input-button" type="button" value="Change rubs" onclick="change()">
+                <details>
+                    <summary>View code</summary>
+                    <img class="code-img" src="images/t1.1.png">
+                </details>
+            </li>
+            <br>
+            <li>
+                <p>Even or odd number</p>
+                <p><details class="task">
+                    <summary>Task</summary>
+                    <h4 class="text">Напишите программу, которая работала бы следующим образом: в prompt вводится значение. 
+                        С помощью унарного плюса (арифметический оператор) необходимо преобразовать его в число, 
+                        затем проверить с помощью typeof, принадлежит ли оно к множеству Number.
+                        Если это число, то вывести в консоль чётное оно или нечётное.
+                        Если передано не число, выведите: «Упс, кажется, вы ошиблись».
+                        *NaN, хоть и относится к типу Number, числом не является. 
+                        Добавьте отдельную проверку для этого значения.</h4>
+                </details></p>
+                <script src="task2.1.js"></script>
+                <input class="input-button" type="button" value="Even/odd" onclick="numbers()">
+                <details>
+                    <summary>View code</summary>
+                    <img class="code-img" src="images/t2.1.png">
+                </details>
+            </li>
+            <br>
+            <li>
+                <p>Type of value</p>
+                <p><details class="task">
+                    <summary>Task</summary>
+                    <h4 class="text">Дана переменная Х, которая может принимать любое значение. 
+                        Написать программу, которая в зависимости от типа данных Х выводит в консоль сообщение вида: «X — число».
+                        Опишите три случая: когда х = числу, строке или логическому типу. 
+                        В других случаях выводите сообщение: «Тип x не определён».</h4>
+                </details></p>
+                <script src="task2.2.js"></script>
+                <input class="input-button" type="button" value="What type" onclick="whatType()">
+                <p><h4>Warning! Func 'What type' is only experimental! Simple one for task is 
+                    located below only in code.</h4></p> 
+                <details>
+                    <summary>View experimental code</summary>
+                    <img class="code-img" src="images/t2.2.png">
+                </details>
+                <details>
+                    <summary>View simple code</summary>
+                    <img class="code-img-smaller" src="images/t2.2.1.png">
+                </details>
+            </li>
+            <br>
+            <li>
+                <p>Reverse</p>
+                <p><details class="task">
+                    <summary>Task</summary>
+                    <h4 class="text">Дана строка. Необходимо вывести в консоль перевёрнутый вариант.
+                         Например, "Hello" -> "olleH".</h4>
+                </details></p>
+                <script src="task3.1.js"></script>
+                <input class="input-button" type="button" value="Reverse" onclick="reverseSrt()">
+                <details>
+                    <summary>View code</summary>
+                    <img class="code-img-smaller" src="images/t3.1.png">
+                </details>
+            </li>
+            <br>
+            <li>
+                <p>Random number</p>
+                <p><details class="task">
+                    <summary>Task</summary>
+                    <h4 class="text">Записать в переменную случайное целое число в диапазоне [0; 100].
+                         Используйте объект Math.</h4>
+                </details></p>
+                <script src="task3.2.js"></script>
+                <input class="input-button" type="button" value="Random" onclick="randInt()">
+                <details>
+                    <summary>View code</summary>
+                    <img class="code-img-smaller" src="images/t3.2.png">
+                </details>
+            </li>
+            <br>
+            <li>
+                <p>Array parse</p>
+                <p><details class="task">
+                    <summary>Task</summary>
+                    <h4 class="text">Дан произвольный массив. Необходимо вывести количество элементов массива, 
+                        затем перебрать его и вывести в консоль каждый элемент массива.</h4>
+                </details></p>
+                <script src="task4.1.js"></script>
+                <input class="input-button" type="button" value="Array" onclick="arrayList()">
+                <details>
+                    <summary>View code</summary>
+                    <img class="code-img" src="images/t4.1.png">
+                </details>
+            </li>
+            <br>
+            <li>
+                <p>Is array unique</p>
+                <p><details class="task">
+                    <summary>Task</summary>
+                    <h4 class="text">Дан массив. Проверить, одинаковые ли элементы в массиве и вывести результат true или false в консоль.
+                         Речь идёт не о двух рядом стоящих одинаковых элементах, а обо всех. 
+                         Проверить, все ли элементы в массиве одинаковые.</h4>
+                </details></p>
+                <script src="task5.1.js"></script>
+                <input class="input-button" type="button" value="Unique" onclick="arrayUnique()">
+                <details>
+                    <summary>View code</summary>
+                    <img class="code-img" src="images/t5.1.png">
+                </details>
+            </li>
+            <br>
+            <li>
+                <p>Is array value odd or even</p>
+                <p><details class="task">
+                    <summary>Task</summary>
+                    <h4 class="text">Дан массив. Нужно вывести в консоль количество чётных и нечётных элементов в массиве.
+                         Если в массиве есть нулевой элемент, то он учитывается и выводится отдельно. 
+                        При выполнении задания необходимо учесть, что массив может содержать не только числа,
+                         но и, например, знаки, null и так далее.</h4>
+                </details></p>
+                <script src="task5.2.js"></script>
+                <input class="input-button" type="button" value="Array odd/even items" onclick="arrayOddEven()">
+                <details>
+                    <summary>View code</summary>
+                    <img class="code-img-bigger" src="images/t5.2.png">
+                </details>
+            </li>
+            <br>
+            <li>
+                <p>Mapping</p>
+                <p><details class="task">
+                    <summary>Task</summary>
+                    <h4 class="text">Создайте произвольный массив Map. 
+                        Получите его ключи и выведите в консоль все значения в виде «Ключ — Х, значение — Y».
+                        Используйте шаблонные строки.</h4>
+                </details></p>
+                <script src="task6.1.js"></script>
+                <input class="input-button" type="button" value="Map" onclick="mapList()">
+                <p><h4>Warning! Func 'Map' is only experimental! Simple one for task is 
+                    located below only in code.</h4></p> 
+                <details>
+                    <summary>View experimental code</summary>
+                    <img class="code-img" src="images/t6.1.png">
+                </details>
+                <details>
+                    <summary>View simple code</summary>
+                    <img class="code-img" src="images/t6.1.1.png">
+                </details>
+            </li>
+        </ul>
+        <footer>
+            <section>
+                <a href="https://github.com/ValeriyMarchenko" role="button" title="My github"><img src="images/github.png" alt="git" width="30" height="30"></a>
+            </section>
+        </footer>
     </body>
 </html>
