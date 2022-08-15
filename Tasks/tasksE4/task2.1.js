@@ -81,3 +81,4 @@ coffeeMachine.powerReq(100)
 
 console.log(computer)
 console.log(coffeeMachine)
+
