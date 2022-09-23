@@ -1,0 +1,53 @@
+body {
+background: #1b2631;
+}
+
+@keyframes FadeInOut {
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+
+.picture{
+height: 550px;
+width: 650px;
+position: relative;
+}
+
+.picture .images{
+height: 100%;
+width: 100%;
+}
+
+.picture .images img{
+height: 100%;
+width: 100%;
+}
+
+.slide{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 45px;
+cursor: pointer;
+border: 2px solid white;
+background: rgba(255,255,255,0.1);
+}
+
+.slide:hover{
+background: rgba(255,255,255,0.2);
+}
+
+.right{
+right: 0;
+}
+
+.slide span{
+margin-left: 15px;
+line-height: 41px;
+font-size: 25px;
+color: white;
+}
