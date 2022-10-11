@@ -2,13 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Geolocation</title>
+        <title>Msngr</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="logic.js"></script>    
     </head>    
     <body>
-        <p id="messages"></p>
-        <button class="btn j-btn-msg">Send</button>
-        <button class="btn j-btn-geo">Send geo</button>
-        <p id="textWindow"></p>
-        <script src="logic.js"></script>    
+        <div id="log"></div>
+        <form id="form">
+            <input type="submit" value="Send"/>
+            <input type="button" value="Send geo" id="send_geo" />
+            <input type="text" id="msg" size="64" autofocus />
+        </form>
     </body>
 </html>
