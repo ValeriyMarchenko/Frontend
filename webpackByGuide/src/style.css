@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./IslandMoments-Regular.ttf')
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: 'MyFont';
+  font-size: 40px;
+}
